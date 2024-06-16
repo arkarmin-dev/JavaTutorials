@@ -8,11 +8,10 @@ public class Main {
         System.out.println("Insert a number");
         int num = scanner.nextInt();
         scanner.nextLine();
-        if(num > 0){
-            System.out.print("Number is positive");
-        }else{
-            System.out.print("Number is negative");
-        }
 
+        String result;
+        result = (num > 0) ? "positive" : "not positive";
+        System.out.print("Number is " + result);
     }
+
 }
